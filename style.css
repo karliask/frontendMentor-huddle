@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('images/bg-desktop.svg');
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 120%;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #fff
+}
+
+#logo{
+    position: absolute;
+    padding: 30px;
+}
+
+
+#all{
+    display: flex;
+    color: #fff;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%
+}
+
+#text{
+    font-size: 1rem
+}
+
+#illustration svg{
+    transform: scale(0.8);
+    padding: 0;
+    margin: 0;
+    margin: auto;
+    display: block;
+    text-align:center;
+}
+
+#registerBtn{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 25%;
+    margin-top: 10px;
+    border-radius: 50px;
+    color: hsl(257, 40%, 49%);
+    transition: all 0.5s ease;
+    box-shadow: 0 0 10px hsl(256, 39%, 33%);
+}
+
+#registerBtn:hover{
+    color: #fff;
+    background: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+#icons{
+    display: flex;
+    position: absolute;
+    top: 90%;
+    left: 85%
+}
+
+#facebook, #twitter, #instagram{
+    padding: 5px;
+    font-size: 1.2rem;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    margin: 7px;
+    transition: all 0.5s ease;
+}
+
+#facebook:hover, #twitter:hover, #instagram:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media(max-width:930px){
+    body{
+        background-image: url('images/bg-mobile.svg');
+        width: 100%;
+        height: 100%;
+    }
+
+    h1{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    #text{
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    #all{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+
+    #illustration{
+        width: 100%;
+    }
+
+    #illustration svg{
+        transform: translate(-50%, -50%);
+        transform: scale(0.3);
+        display: block;
+        text-align:center;
+        margin: auto;
+    }
+
+    #registerBtn{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);     
+    }
+
+    #logo{
+        transform: scale(0.5);
+        padding: 0px;
+        position: absolute;
+        left: 0;
+    }
+
+    #icons{
+        left: 0;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    #subAll{
+        position: absolute;
+        margin-top: 120%
+    }
+}
